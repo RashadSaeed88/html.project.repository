@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US"><head><!-- Created by Artisteer v4.3.0.60745 -->
+    <meta charset="utf-8">
+    <title>Main</title>
+    <meta name="viewport" content="initial-scale = 1.0, maximum-scale = 1.0, user-scalable = no, width = device-width">
+
+    <!--[if lt IE 9]><script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <link rel="stylesheet" href="style.css" media="screen">
+    <!--[if lte IE 7]><link rel="stylesheet" href="style.ie7.css" media="screen" /><![endif]-->
+    <link rel="stylesheet" href="style.responsive.css" media="all">
+
+
+    <script src="jquery.js"></script>
+    <script src="script.js"></script>
+    <script src="script.responsive.js"></script>
+
+
+<script>jQuery(function ($) {
+    'use strict';
+    if ($.fn.themeSlider) {
+        $(".art-slidecontainershutterstock_21352132").each(function () {
+            var slideContainer = $(this), tmp;
+            var inner = $(".art-slider-inner", slideContainer);
+            inner.children().filter("script").remove();
+            var helper = null;
+            
+            if ($.support.themeTransition) {
+                helper = new BackgroundHelper();
+                helper.init("fade", "next", $(".art-slide-item", inner).first().css($.support.themeTransition.prefix + "transition-duration"));
+                inner.children().each(function () {
+                    helper.processSlide($(this));
+                });
+
+                
+            } else if (browser.ie && browser.version <= 8) {
+                var slidesInfo = {
+".art-slideshutterstock_213521320": {
+    "bgimage" : "url('images/slideshutterstock_213521320.png')",
+    "bgposition": "0 0",
+    "images": "",
+    "positions": ""
+},
+".art-slideshutterstock_213521321": {
+    "bgimage" : "url('images/slideshutterstock_213521321.png')",
+    "bgposition": "0 0",
+    "images": "",
+    "positions": ""
+},
+".art-slideshutterstock_213521322": {
+    "bgimage" : "url('images/slideshutterstock_213521322.png')",
+    "bgposition": "0 0",
+    "images": "",
+    "positions": ""
+}
+                };
+                $.each(slidesInfo, function(selector, info) {
+                    processElementMultiplyBg(slideContainer.find(selector), info);
+                });
+            }
+
+            inner.children().eq(0).addClass("active");
+            slideContainer.themeSlider({
+                pause: 2600,
+                speed: 600,
+                repeat: true,
+                animation: "fade",
+                direction: "next",
+                navigator: slideContainer.siblings(".art-slidenavigatorshutterstock_21352132"),
+                helper: helper
+            });
+            
+                        
+        });
+    }
+});
+</script><style>.art-content .art-postcontent-0 .layout-item-0 { margin-top: 20px;margin-bottom: 20px;  }
+.art-content .art-postcontent-0 .layout-item-1 { padding-right: 10px;padding-left: 10px;  }
+.ie7 .art-post .art-layout-cell {border:none !important; padding:0 !important; }
+.ie6 .art-post .art-layout-cell {border:none !important; padding:0 !important; }
+
+.art-slidecontainershutterstock_21352132 {
+    position: relative;
+        width: 380px;
+    height: 253px;
+        }
+
+.default-responsive .art-header .art-slidecontainershutterstock_21352132,
+.responsive .art-header .art-slidecontainershutterstock_21352132
+{
+  position: absolute !important;
+}
+
+.responsive .art-pageslider .art-slidecontainershutterstock_21352132 {
+  position: absolute !important;
+}
+
+.art-slidecontainershutterstock_21352132 .art-slide-item
+{
+
+    -webkit-transform: rotate(0);
+    -moz-transform: rotate(0);
+    transform: rotate(0);
+}
+
+
+
+.art-slidecontainershutterstock_21352132 .art-slide-item {
+    -webkit-transition: 600ms ease-in-out opacity;
+    -moz-transition: 600ms ease-in-out opacity;
+    -ms-transition: 600ms ease-in-out opacity;
+    -o-transition: 600ms ease-in-out opacity;
+    transition: 600ms ease-in-out opacity;
+    position: absolute !important;
+    display: none;
+	left: 0;
+	top: 0;
+	opacity: 0;
+    width:  100%;
+    height: 100%;
+}
+
+.art-slidecontainershutterstock_21352132 .active, .art-slidecontainershutterstock_21352132 .next, .art-slidecontainershutterstock_21352132 .prev {
+    display: block;
+}
+
+.art-slidecontainershutterstock_21352132 .active {
+    opacity: 1;
+}
+
+.art-slidecontainershutterstock_21352132 .next, .art-slidecontainershutterstock_21352132 .prev {
+    width: 100%;
+}
+
+.art-slidecontainershutterstock_21352132 .next.forward, .art-slidecontainershutterstock_21352132 .prev.back {
+    opacity: 1;
+}
+
+.art-slidecontainershutterstock_21352132 .active.forward {
+    opacity: 0;
+}
+
+.art-slidecontainershutterstock_21352132 .active.back {
+    opacity: 0;
+}
+
+
+.art-slideshutterstock_213521320 {
+    background-image:  url('images/slideshutterstock_213521320.png');
+        /* background-size:  auto auto; */
+        background-position:  center center;
+    background-repeat: no-repeat;
+}
+
+/* special setup for header/pageslider */
+.responsive .art-header .art-slideshutterstock_213521320 {
+    background-image:  url('images/slideshutterstock_213521320.png');
+    background-size: auto auto;
+    background-position:  center center;
+    background-repeat: no-repeat;
+}
+
+.responsive .art-pageslider .art-slideshutterstock_213521320 {
+    background-image:  url('images/slideshutterstock_213521320.png');
+    background-size: auto auto;
+    background-position:  center center;
+    background-repeat: no-repeat;
+}
+
+.default-responsive .art-header .art-slideshutterstock_213521320 {
+    background-image: url('images/slideshutterstock_213521320.png');
+    background-size: auto auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.default-responsive .art-pageslider .art-slideshutterstock_213521320 {
+    background-image: url('images/slideshutterstock_213521320.png');
+    background-size: auto auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+}.art-slideshutterstock_213521321 {
+    background-image:  url('images/slideshutterstock_213521321.png');
+        /* background-size:  auto auto; */
+        background-position:  center center;
+    background-repeat: no-repeat;
+}
+
+/* special setup for header/pageslider */
+.responsive .art-header .art-slideshutterstock_213521321 {
+    background-image:  url('images/slideshutterstock_213521321.png');
+    background-size: auto auto;
+    background-position:  center center;
+    background-repeat: no-repeat;
+}
+
+.responsive .art-pageslider .art-slideshutterstock_213521321 {
+    background-image:  url('images/slideshutterstock_213521321.png');
+    background-size: auto auto;
+    background-position:  center center;
+    background-repeat: no-repeat;
+}
+
+.default-responsive .art-header .art-slideshutterstock_213521321 {
+    background-image: url('images/slideshutterstock_213521321.png');
+    background-size: auto auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.default-responsive .art-pageslider .art-slideshutterstock_213521321 {
+    background-image: url('images/slideshutterstock_213521321.png');
+    background-size: auto auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+}.art-slideshutterstock_213521322 {
+    background-image:  url('images/slideshutterstock_213521322.png');
+        /* background-size:  auto auto; */
+        background-position:  center center;
+    background-repeat: no-repeat;
+}
+
+/* special setup for header/pageslider */
+.responsive .art-header .art-slideshutterstock_213521322 {
+    background-image:  url('images/slideshutterstock_213521322.png');
+    background-size: auto auto;
+    background-position:  center center;
+    background-repeat: no-repeat;
+}
+
+.responsive .art-pageslider .art-slideshutterstock_213521322 {
+    background-image:  url('images/slideshutterstock_213521322.png');
+    background-size: auto auto;
+    background-position:  center center;
+    background-repeat: no-repeat;
+}
+
+.default-responsive .art-header .art-slideshutterstock_213521322 {
+    background-image: url('images/slideshutterstock_213521322.png');
+    background-size: auto auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.default-responsive .art-pageslider .art-slideshutterstock_213521322 {
+    background-image: url('images/slideshutterstock_213521322.png');
+    background-size: auto auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.art-slidenavigatorshutterstock_21352132 {
+  display: inline-block;
+  position: absolute;
+  direction: ltr !important;
+  top: 229px;
+  left: 83.16%;
+  z-index: 101;
+  line-height: 0 !important;
+  -webkit-background-origin: border !important;
+  -moz-background-origin: border !important;
+  background-origin: border-box !important;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  text-align: center;
+    white-space: nowrap;
+    }
+.art-slidenavigatorshutterstock_21352132
+{
+background: #9A9A9A;background: -webkit-linear-gradient(top, rgba(194, 194, 194, 0.6) 0, rgba(128, 128, 128, 0.6) 84%, rgba(115, 115, 115, 0.6) 100%) no-repeat;background: -moz-linear-gradient(top, rgba(194, 194, 194, 0.6) 0, rgba(128, 128, 128, 0.6) 84%, rgba(115, 115, 115, 0.6) 100%) no-repeat;background: -o-linear-gradient(top, rgba(194, 194, 194, 0.6) 0, rgba(128, 128, 128, 0.6) 84%, rgba(115, 115, 115, 0.6) 100%) no-repeat;background: -ms-linear-gradient(top, rgba(194, 194, 194, 0.6) 0, rgba(128, 128, 128, 0.6) 84%, rgba(115, 115, 115, 0.6) 100%) no-repeat;-svg-background: linear-gradient(top, rgba(194, 194, 194, 0.6) 0, rgba(128, 128, 128, 0.6) 84%, rgba(115, 115, 115, 0.6) 100%) no-repeat;background: linear-gradient(to bottom, rgba(194, 194, 194, 0.6) 0, rgba(128, 128, 128, 0.6) 84%, rgba(115, 115, 115, 0.6) 100%) no-repeat;
+-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;
+
+
+padding:7px;
+
+
+
+
+
+}
+.art-slidenavigatorshutterstock_21352132 > a
+{
+background: #575757;
+-webkit-border-radius:50%;-moz-border-radius:50%;border-radius:50%;
+
+
+
+margin:0 10px 0 0;
+
+width: 10px;
+
+height: 10px;
+}
+.art-slidenavigatorshutterstock_21352132 > a.active
+{
+background: #FDDA7B;
+-webkit-border-radius:50%;-moz-border-radius:50%;border-radius:50%;
+
+
+
+margin:0 10px 0 0;
+
+width: 10px;
+
+height: 10px;
+}
+.art-slidenavigatorshutterstock_21352132 > a:hover
+{
+background: #AB7E03;
+-webkit-border-radius:50%;-moz-border-radius:50%;border-radius:50%;
+
+
+
+margin:0 10px 0 0;
+
+width: 10px;
+
+height: 10px;
+}
+
+</style></head>
+<body>
+<div id="art-main">
+    <div class="art-sheet clearfix">
+<header class="art-header">
+
+    <div class="art-shapes">
+        
+            </div>
+<div class="art-slider art-slidecontainerheader" data-width="800" data-height="200">
+    <div class="art-slider-inner">
+<div class="art-slide-item art-slideheader0">
+
+
+</div>
+<div class="art-slide-item art-slideheader1">
+
+
+</div>
+
+    </div>
+</div>
+<div class="art-slidenavigator art-slidenavigatorheader" data-left="1" data-top="1">
+<a href="#" class="art-slidenavigatoritem"></a><a href="#" class="art-slidenavigatoritem"></a>
+</div>
+
+
+<h2 class="art-slogan">Artificial Intelligence</h2>
+
+
+
+
+
+                
+                    
+</header>
+<nav class="art-nav">
+    <ul class="art-hmenu"><li><a href="artificial-intelligence.html" class="">ARTIFICIAL INTELLIGENCE</a></li><li><a href="characteristics-of-intelligence.html" class="">Characteristics of intelligence</a><ul class=""><li><a href="characteristics-of-intelligence/customers-say.html" class="">Customers Say</a></li></ul></li><li><a href="car-reviews.html" class="">The importance of artificial intelligence</a></li><li><a href="problem-of-artificial-intellegence.html" class="active">problem of artificial intellegence</a></li></ul> 
+    </nav>
+<div class="art-layout-wrapper">
+                <div class="art-content-layout">
+                    <div class="art-content-layout-row">
+                        <div class="art-layout-cell art-content"><article class="art-post art-article">
+                                
+                                                
+                <div class="art-postcontent art-postcontent-0 clearfix"><div class="art-content-layout-wrapper layout-item-0">
+<div class="art-content-layout">
+    <div class="art-content-layout-row">
+    <div class="art-layout-cell layout-item-1" style="width: 52%" >
+<div id="shutterstock_21352132" style="position: relative; display: inline-block; z-index: 0; margin: 0px;  border-width: 0px;  " class="art-collage">
+<div class="art-slider art-slidecontainershutterstock_21352132" data-width="380" data-height="253">
+    <div class="art-slider-inner">
+<div class="art-slide-item art-slideshutterstock_213521320" >
+
+
+</div>
+<div class="art-slide-item art-slideshutterstock_213521321" >
+
+
+</div>
+<div class="art-slide-item art-slideshutterstock_213521322" >
+
+
+</div>
+
+    </div>
+</div>
+<div class="art-slidenavigator art-slidenavigatorshutterstock_21352132" data-left="1" data-top="1">
+<a href="#" class="art-slidenavigatoritem"></a><a href="#" class="art-slidenavigatoritem"></a><a href="#" class="art-slidenavigatoritem"></a>
+</div>
+
+
+
+    </div>
+
+    </div><div class="art-layout-cell layout-item-1" style="width: 48%" >
+        <p class="MsoNormal"><b><u><span style="font-size: 16pt; line-height: 107%; color: red;">artificial intelligence problems</span></u></b></p>
+         
+        <p class="MsoNormal">The problem of simulating (or creating) intelligence has
+         been divided into a number of specific sub-problems. These consist of specific
+         traits or capabilities that researchers would like to embody in an intelligent
+         system. The features listed below have received the most attention.</p>
+         
+        <p class="MsoNormal">Reasoning, logical thinking, and problem-solving ability</p>
+         
+        <p class="MsoNormal">The first researchers in the science of artificial
+         intelligence developed algorithms that simulate the sequential logical
+         reasoning that humans do when solving puzzles, playing backgammon or logical deductions.</p>
+         
+        <p class="MsoNormal">In the 1980s and 1990s, artificial intelligence research led
+         to highly successful ways of dealing with uncertain or incomplete information,
+         using concepts from probability and economics.</p>
+         
+        <p class="MsoNormal">For difficult problems, most of these algorithms require
+         huge computational resources—resulting in a "combinatorial
+         explosion": the amount of memory or time needed for computers becomes
+         astronomical when the problem exceeds a certain size. The search for algorithms
+         that are more capable of solving problems is a top priority for AI research.</p>
+         
+        <p class="MsoNormal">Humans solve most of their problems using intuitive, rather
+         than conscious, quick judgments, by step-by-step deduction that early AI
+         researchers were able to simulate automatically. AI research has made some
+         progress in imitating this "sub-symbolic" type of problem-solving
+         skills: the approaches involved underscore the importance of sensorimotor
+         skills for higher thinking; And attempts to research in the field of neural
+         networks and simulate the structures inside the brain of humans and animals
+         that lead to the emergence of this skill.</p><p><span style="font-weight: bold;"><br></span></p>
+    </div>
+    </div>
+</div>
+</div>
+<div class="art-content-layout">
+    <div class="art-content-layout-row">
+    <div class="art-layout-cell layout-item-1" style="width: 33%" >
+        <span style="color: rgb(255, 212, 0); font-size: 18px; font-weight: bold;"><br></span>
+    </div><div class="art-layout-cell layout-item-1" style="width: 34%" >
+        <span style="color: rgb(255, 212, 0); font-size: 18px; font-weight: bold;"><br></span>
+    </div><div class="art-layout-cell layout-item-1" style="width: 33%" >
+        <span style="color: rgb(255, 212, 0); font-size: 18px; font-weight: bold;"><br></span>
+    </div>
+    </div>
+</div>
+</div>
+
+
+</article></div>
+                    </div>
+                </div>
+            </div><footer class="art-footer">
+<p><br></p>
+</footer>
+
+    </div>
+</div>
+
+
+</body></html>

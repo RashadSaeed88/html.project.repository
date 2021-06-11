@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US"><head><!-- Created by Artisteer v4.3.0.60745 -->
+    <meta charset="utf-8">
+    <title>Main</title>
+    <meta name="viewport" content="initial-scale = 1.0, maximum-scale = 1.0, user-scalable = no, width = device-width">
+
+    <!--[if lt IE 9]><script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <link rel="stylesheet" href="style.css" media="screen">
+    <!--[if lte IE 7]><link rel="stylesheet" href="style.ie7.css" media="screen" /><![endif]-->
+    <link rel="stylesheet" href="style.responsive.css" media="all">
+
+
+    <script src="jquery.js"></script>
+    <script src="script.js"></script>
+    <script src="script.responsive.js"></script>
+
+
+<script>jQuery(function ($) {
+    'use strict';
+    if ($.fn.themeSlider) {
+        $(".art-slidecontainershutterstock_2135213").each(function () {
+            var slideContainer = $(this), tmp;
+            var inner = $(".art-slider-inner", slideContainer);
+            inner.children().filter("script").remove();
+            var helper = null;
+            
+            if ($.support.themeTransition) {
+                helper = new BackgroundHelper();
+                helper.init("fade", "next", $(".art-slide-item", inner).first().css($.support.themeTransition.prefix + "transition-duration"));
+                inner.children().each(function () {
+                    helper.processSlide($(this));
+                });
+
+                
+            } else if (browser.ie && browser.version <= 8) {
+                var slidesInfo = {
+".art-slideshutterstock_21352130": {
+    "bgimage" : "url('images/slideshutterstock_21352130.png')",
+    "bgposition": "0 0",
+    "images": "",
+    "positions": ""
+},
+".art-slideshutterstock_21352131": {
+    "bgimage" : "url('images/slideshutterstock_21352131.png')",
+    "bgposition": "0 0",
+    "images": "",
+    "positions": ""
+}
+                };
+                $.each(slidesInfo, function(selector, info) {
+                    processElementMultiplyBg(slideContainer.find(selector), info);
+                });
+            }
+
+            inner.children().eq(0).addClass("active");
+            slideContainer.themeSlider({
+                pause: 2600,
+                speed: 600,
+                repeat: true,
+                animation: "fade",
+                direction: "next",
+                navigator: slideContainer.siblings(".art-slidenavigatorshutterstock_2135213"),
+                helper: helper
+            });
+            
+                        
+        });
+    }
+});
+</script><style>.art-content .art-postcontent-0 .layout-item-0 { margin-top: 20px;margin-bottom: 20px;  }
+.art-content .art-postcontent-0 .layout-item-1 { padding-right: 10px;padding-left: 10px;  }
+.ie7 .art-post .art-layout-cell {border:none !important; padding:0 !important; }
+.ie6 .art-post .art-layout-cell {border:none !important; padding:0 !important; }
+
+.art-slidecontainershutterstock_2135213 {
+    position: relative;
+        width: 380px;
+    height: 253px;
+        }
+
+.default-responsive .art-header .art-slidecontainershutterstock_2135213,
+.responsive .art-header .art-slidecontainershutterstock_2135213
+{
+  position: absolute !important;
+}
+
+.responsive .art-pageslider .art-slidecontainershutterstock_2135213 {
+  position: absolute !important;
+}
+
+.art-slidecontainershutterstock_2135213 .art-slide-item
+{
+
+    -webkit-transform: rotate(0);
+    -moz-transform: rotate(0);
+    transform: rotate(0);
+}
+
+
+
+.art-slidecontainershutterstock_2135213 .art-slide-item {
+    -webkit-transition: 600ms ease-in-out opacity;
+    -moz-transition: 600ms ease-in-out opacity;
+    -ms-transition: 600ms ease-in-out opacity;
+    -o-transition: 600ms ease-in-out opacity;
+    transition: 600ms ease-in-out opacity;
+    position: absolute !important;
+    display: none;
+	left: 0;
+	top: 0;
+	opacity: 0;
+    width:  100%;
+    height: 100%;
+}
+
+.art-slidecontainershutterstock_2135213 .active, .art-slidecontainershutterstock_2135213 .next, .art-slidecontainershutterstock_2135213 .prev {
+    display: block;
+}
+
+.art-slidecontainershutterstock_2135213 .active {
+    opacity: 1;
+}
+
+.art-slidecontainershutterstock_2135213 .next, .art-slidecontainershutterstock_2135213 .prev {
+    width: 100%;
+}
+
+.art-slidecontainershutterstock_2135213 .next.forward, .art-slidecontainershutterstock_2135213 .prev.back {
+    opacity: 1;
+}
+
+.art-slidecontainershutterstock_2135213 .active.forward {
+    opacity: 0;
+}
+
+.art-slidecontainershutterstock_2135213 .active.back {
+    opacity: 0;
+}
+
+
+.art-slideshutterstock_21352130 {
+    background-image:  url('images/slideshutterstock_21352130.png');
+        /* background-size:  auto auto; */
+        background-position:  center center;
+    background-repeat: no-repeat;
+}
+
+/* special setup for header/pageslider */
+.responsive .art-header .art-slideshutterstock_21352130 {
+    background-image:  url('images/slideshutterstock_21352130.png');
+    background-size: auto auto;
+    background-position:  center center;
+    background-repeat: no-repeat;
+}
+
+.responsive .art-pageslider .art-slideshutterstock_21352130 {
+    background-image:  url('images/slideshutterstock_21352130.png');
+    background-size: auto auto;
+    background-position:  center center;
+    background-repeat: no-repeat;
+}
+
+.default-responsive .art-header .art-slideshutterstock_21352130 {
+    background-image: url('images/slideshutterstock_21352130.png');
+    background-size: auto auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.default-responsive .art-pageslider .art-slideshutterstock_21352130 {
+    background-image: url('images/slideshutterstock_21352130.png');
+    background-size: auto auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+}.art-slideshutterstock_21352131 {
+    background-image:  url('images/slideshutterstock_21352131.png');
+        /* background-size:  auto auto; */
+        background-position:  center center;
+    background-repeat: no-repeat;
+}
+
+/* special setup for header/pageslider */
+.responsive .art-header .art-slideshutterstock_21352131 {
+    background-image:  url('images/slideshutterstock_21352131.png');
+    background-size: auto auto;
+    background-position:  center center;
+    background-repeat: no-repeat;
+}
+
+.responsive .art-pageslider .art-slideshutterstock_21352131 {
+    background-image:  url('images/slideshutterstock_21352131.png');
+    background-size: auto auto;
+    background-position:  center center;
+    background-repeat: no-repeat;
+}
+
+.default-responsive .art-header .art-slideshutterstock_21352131 {
+    background-image: url('images/slideshutterstock_21352131.png');
+    background-size: auto auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.default-responsive .art-pageslider .art-slideshutterstock_21352131 {
+    background-image: url('images/slideshutterstock_21352131.png');
+    background-size: auto auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.art-slidenavigatorshutterstock_2135213 {
+  display: inline-block;
+  position: absolute;
+  direction: ltr !important;
+  top: 229px;
+  left: 88.42%;
+  z-index: 101;
+  line-height: 0 !important;
+  -webkit-background-origin: border !important;
+  -moz-background-origin: border !important;
+  background-origin: border-box !important;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  text-align: center;
+    white-space: nowrap;
+    }
+.art-slidenavigatorshutterstock_2135213
+{
+background: #9A9A9A;background: -webkit-linear-gradient(top, rgba(194, 194, 194, 0.6) 0, rgba(128, 128, 128, 0.6) 84%, rgba(115, 115, 115, 0.6) 100%) no-repeat;background: -moz-linear-gradient(top, rgba(194, 194, 194, 0.6) 0, rgba(128, 128, 128, 0.6) 84%, rgba(115, 115, 115, 0.6) 100%) no-repeat;background: -o-linear-gradient(top, rgba(194, 194, 194, 0.6) 0, rgba(128, 128, 128, 0.6) 84%, rgba(115, 115, 115, 0.6) 100%) no-repeat;background: -ms-linear-gradient(top, rgba(194, 194, 194, 0.6) 0, rgba(128, 128, 128, 0.6) 84%, rgba(115, 115, 115, 0.6) 100%) no-repeat;-svg-background: linear-gradient(top, rgba(194, 194, 194, 0.6) 0, rgba(128, 128, 128, 0.6) 84%, rgba(115, 115, 115, 0.6) 100%) no-repeat;background: linear-gradient(to bottom, rgba(194, 194, 194, 0.6) 0, rgba(128, 128, 128, 0.6) 84%, rgba(115, 115, 115, 0.6) 100%) no-repeat;
+-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;
+
+
+padding:7px;
+
+
+
+
+
+}
+.art-slidenavigatorshutterstock_2135213 > a
+{
+background: #575757;
+-webkit-border-radius:50%;-moz-border-radius:50%;border-radius:50%;
+
+
+
+margin:0 10px 0 0;
+
+width: 10px;
+
+height: 10px;
+}
+.art-slidenavigatorshutterstock_2135213 > a.active
+{
+background: #FDDA7B;
+-webkit-border-radius:50%;-moz-border-radius:50%;border-radius:50%;
+
+
+
+margin:0 10px 0 0;
+
+width: 10px;
+
+height: 10px;
+}
+.art-slidenavigatorshutterstock_2135213 > a:hover
+{
+background: #AB7E03;
+-webkit-border-radius:50%;-moz-border-radius:50%;border-radius:50%;
+
+
+
+margin:0 10px 0 0;
+
+width: 10px;
+
+height: 10px;
+}
+
+</style></head>
+<body>
+<div id="art-main">
+    <div class="art-sheet clearfix">
+<header class="art-header">
+
+    <div class="art-shapes">
+        
+            </div>
+<div class="art-slider art-slidecontainerheader" data-width="800" data-height="200">
+    <div class="art-slider-inner">
+<div class="art-slide-item art-slideheader0">
+
+
+</div>
+<div class="art-slide-item art-slideheader1">
+
+
+</div>
+
+    </div>
+</div>
+<div class="art-slidenavigator art-slidenavigatorheader" data-left="1" data-top="1">
+<a href="#" class="art-slidenavigatoritem"></a><a href="#" class="art-slidenavigatoritem"></a>
+</div>
+
+
+<h2 class="art-slogan">Artificial Intelligence</h2>
+
+
+
+
+
+                
+                    
+</header>
+<nav class="art-nav">
+    <ul class="art-hmenu"><li><a href="artificial-intelligence.html" class="active">ARTIFICIAL INTELLIGENCE</a></li><li><a href="characteristics-of-intelligence.html">Characteristics of intelligence</a><ul><li><a href="characteristics-of-intelligence/customers-say.html">Customers Say</a></li></ul></li><li><a href="car-reviews.html">The importance of artificial intelligence</a></li><li><a href="problem-of-artificial-intellegence.html">problem of artificial intellegence</a></li></ul> 
+    </nav>
+<div class="art-layout-wrapper">
+                <div class="art-content-layout">
+                    <div class="art-content-layout-row">
+                        <div class="art-layout-cell art-content"><article class="art-post art-article">
+                                
+                                                
+                <div class="art-postcontent art-postcontent-0 clearfix"><div class="art-content-layout-wrapper layout-item-0">
+<div class="art-content-layout">
+    <div class="art-content-layout-row">
+    <div class="art-layout-cell layout-item-1" style="width: 52%" >
+<div id="shutterstock_2135213" style="position: relative; display: inline-block; z-index: 0; margin: 0px;  border-width: 0px;  " class="art-collage">
+<div class="art-slider art-slidecontainershutterstock_2135213" data-width="380" data-height="253">
+    <div class="art-slider-inner">
+<div class="art-slide-item art-slideshutterstock_21352130" >
+
+
+</div>
+<div class="art-slide-item art-slideshutterstock_21352131" >
+
+
+</div>
+
+    </div>
+</div>
+<div class="art-slidenavigator art-slidenavigatorshutterstock_2135213" data-left="1" data-top="1">
+<a href="#" class="art-slidenavigatoritem"></a><a href="#" class="art-slidenavigatoritem"></a>
+</div>
+
+
+
+    </div>
+
+    </div><div class="art-layout-cell layout-item-1" style="width: 48%" >
+        <p class="MsoNormal"><b><u><span style="font-size: 16pt; line-height: 107%;">The definition</span></u></b></p>
+         
+        <p class="MsoNormal">Artificial intelligence is a branch of computer science.
+         Much of the literature defines artificial intelligence, as: “the study and
+         design of intelligent customers.” An intelligent customer is a system that
+         understands its environment and takes positions that increase its chance of
+         success in achieving its mission or team mission.</p>
+         
+        <p class="MsoNormal">This definition, in terms of goals, actions, perception, and
+         environment is due to Russell &amp; Norvig (2003) and other definitions also
+         include knowledge and learning as additional criteria. Computer scientist John
+         McCarthy originally coined the term in 1956, and himself defined it as
+         "the science and engineering of making intelligent machines". Andreas
+         Kaplan and Michael Heinlein define artificial intelligence as “the ability of a
+         system to correctly interpret external data, learn from that data, and use that
+         knowledge to achieve specific goals and tasks through flexible adaptation.”</p><p><span style="font-weight: bold;"><br></span></p>
+    </div>
+    </div>
+</div>
+</div>
+<div class="art-content-layout">
+    <div class="art-content-layout-row">
+    <div class="art-layout-cell layout-item-1" style="width: 33%" >
+        <p class="MsoNormal"><b><u><span style="font-size: 16pt; line-height: 107%; color: red;">Controversy</span></u></b></p>
+         
+        <p class="MsoNormal">The field was founded on the assumption that the faculty of
+         intelligence can be described so accurately that a machine can simulate it.
+         This raises a philosophical debate about the nature of the human mind and the
+         limits of scientific methods, issues that have been discussed in mythical,
+         imaginary and philosophical discussions and tales since ancient times. There is
+         also a debate about what intelligence and its types possessed by man, and how
+         to simulate it with a machine. Artificial intelligence has been and continues
+         to be the cause of highly optimistic ideas, it has suffered huge setbacks
+         throughout history, and today it has become an essential part of the technology
+         industry, bearing the brunt of the toughest problems in modern computer
+         science.</p>
+         
+        <p class="MsoNormal">AI research is highly specialized and technical, to the
+         point that some critics criticize the field's "disintegration". The
+         sub-fields of AI revolve around specific problems, the application of special
+         tools and around old theoretical differences of opinion. The main problems of
+         AI include capabilities such as logical thinking, knowledge, planning,
+         learning, communication, perception, and the ability to move and change things.
+         General intelligence (or "strong AI") is still a long-term goal of
+         some research in this field.</p><h3></h3><p><a href="/areas-of-artificial-intelligence"></a></p>
+    </div><div class="art-layout-cell layout-item-1" style="width: 34%" >
+        <p class="MsoNormal"><b><u><span style="font-size: 14pt; line-height: 107%; color: red;">History of Artificial Intelligence Research</span></u></b></p>
+         
+        <p class="MsoNormal">In the mid-20th century, a few scientists began exploring a
+         new approach to building intelligent machines, based on recent discoveries in
+         neuroscience, a new mathematical theory of information, the development of
+         cybernetics, and above all, by the invention of the digital computer, a machine
+         that could simulate The human computational thinking process.</p>
+         
+        <p class="MsoNormal">He established the modern field of artificial intelligence
+         research at a conference on the campus of Dartmouth College in the summer of
+         1956. These attendees became leaders in artificial intelligence research for
+         several decades, notably John McCarthy and Marvin Minsky, Allen Noel and
+         Herbert Simon who established artificial intelligence laboratories at MIT and
+         the University of Carnegie Mellon (CMU) and Stanford, they and their students
+         wrote programs that surprised most people. The computer was solving algebra
+         problems, proving logical theorems, and speaking English. By the mid-1960s this
+         research was being generously funded by the US Department of Defense. These
+         researchers made the following predictions:</p>
+         
+        <p class="MsoNormal">1965, e. a. Simon: "In twenty years, machines will be
+         able to do whatever work a man can do."</p>
+         
+        <p class="MsoNormal">1967, Marvin Minsky: "Within a generation...the problem
+         of creating 'artificial intelligence' will be largely solved."</p>
+         
+        <p class="MsoNormal">But they failed to realize the difficulty of some of the
+         problems they faced. In 1974, in response to criticism from England's Sir James
+         Lightttle and persistent pressure from Congress to fund more productive
+         projects, the US and British governments cut funding for all undirected
+         exploratory research in AI, the first setback for AI research.</p>
+         
+        <p class="MsoNormal">In the early 1980s, AI research experienced a new revival
+         through the commercial success of "expert systems", an AI program
+         that simulates the knowledge and analytical skills of one or more human
+         experts. By 1985, artificial intelligence research profits in the marketplace
+         had reached more than $1 billion, and governments began funding again. A few
+         years later, starting with the collapse of the Lisp Machine market in 1987, AI
+         research experienced another but longer setback.</p>
+         
+        <p class="MsoNormal">In the 1990s and early 2000s, AI achieved even greater
+         successes, albeit somewhat behind the scenes. AI is used in logistics, data
+         mining, medical diagnostics and many other areas across the technology
+         industry. This success is due to several factors: the great power of computers
+         today (see Moore's Law), the increased focus on solving specific sub-problems,
+         the creation of new relationships between the field of artificial intelligence
+         and other areas of work on similar problems, and, above all, researchers have
+         begun to adhere to strong mathematical approaches. and strict scientific
+         standards.</p>
+         
+        <p class="MsoNormal">In the twenty-first century, AI research has become so
+         highly specialized and technical, that it has split into so deeply independent
+         sub-fields that they are few among themselves. Divisions of the field have
+         grown around particular institutions, researchers have worked to solve specific
+         problems, long-standing differences of opinion about how AI should work, and
+         different tools are widely applied.</p><p><span style="color: rgb(210, 210, 210); line-height: 24px;"><br></span></p><ul style="margin-top: 1em; margin-bottom: 1em; margin-left: 2em;"><li><br></li>
+        </ul>
+    </div><div class="art-layout-cell layout-item-1" style="width: 33%" >
+        <p class="MsoNormal"><b><u><span style="font-size: 14pt; line-height: 107%; color: red;">Social Intelligence</span></u></b></p>
+         
+        <p class="MsoNormal">Kismet, a robot with rudimentary social skills</p>
+         
+        <p class="MsoNormal">Emotions and social skills play two roles for an intelligent
+         agent:</p>
+         
+        <p class="MsoNormal">It must be able to predict the actions of others, and
+         understand their motives and emotional states. (This involves elements of game
+         theory, decision theory, as well as the ability to simulate human emotions and
+         perceptual skills to detect emotions.)</p>
+         
+        <p class="MsoNormal">For good human-computer interaction, an intelligent machine
+         also needs to display emotions—at least it must appear polite and sensitive in
+         its interactions with humans. At best, she should have normal feelings.</p><p><br></p>
+    </div>
+    </div>
+</div>
+</div>
+
+
+</article></div>
+                    </div>
+                </div>
+            </div><footer class="art-footer">
+<p><br></p>
+</footer>
+
+    </div>
+</div>
+
+
+</body></html>

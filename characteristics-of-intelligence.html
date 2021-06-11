@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US"><head><!-- Created by Artisteer v4.3.0.60745 -->
+    <meta charset="utf-8">
+    <title>Find A Car</title>
+    <meta name="viewport" content="initial-scale = 1.0, maximum-scale = 1.0, user-scalable = no, width = device-width">
+
+    <!--[if lt IE 9]><script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <link rel="stylesheet" href="style.css" media="screen">
+    <!--[if lte IE 7]><link rel="stylesheet" href="style.ie7.css" media="screen" /><![endif]-->
+    <link rel="stylesheet" href="style.responsive.css" media="all">
+
+
+    <script src="jquery.js"></script>
+    <script src="script.js"></script>
+    <script src="script.responsive.js"></script>
+
+
+<script>jQuery(function ($) {
+    'use strict';
+    if ($.fn.themeSlider) {
+        $(".art-slidecontainershutterstock_17235442").each(function () {
+            var slideContainer = $(this), tmp;
+            var inner = $(".art-slider-inner", slideContainer);
+            inner.children().filter("script").remove();
+            var helper = null;
+            
+            if ($.support.themeTransition) {
+                helper = new BackgroundHelper();
+                helper.init("fade", "next", $(".art-slide-item", inner).first().css($.support.themeTransition.prefix + "transition-duration"));
+                inner.children().each(function () {
+                    helper.processSlide($(this));
+                });
+
+                
+            } else if (browser.ie && browser.version <= 8) {
+                var slidesInfo = {
+".art-slideshutterstock_172354420": {
+    "bgimage" : "url('images/slideshutterstock_172354420.png')",
+    "bgposition": "0 0",
+    "images": "",
+    "positions": ""
+},
+".art-slideshutterstock_172354421": {
+    "bgimage" : "url('images/slideshutterstock_172354421.png')",
+    "bgposition": "0 0",
+    "images": "",
+    "positions": ""
+}
+                };
+                $.each(slidesInfo, function(selector, info) {
+                    processElementMultiplyBg(slideContainer.find(selector), info);
+                });
+            }
+
+            inner.children().eq(0).addClass("active");
+            slideContainer.themeSlider({
+                pause: 2600,
+                speed: 600,
+                repeat: true,
+                animation: "fade",
+                direction: "next",
+                navigator: slideContainer.siblings(".art-slidenavigatorshutterstock_17235442"),
+                helper: helper
+            });
+            
+                        
+        });
+    }
+});
+</script><style>.art-content .art-postcontent-0 .layout-item-0 { padding-right: 10px;padding-left: 10px;  }
+.ie7 .art-post .art-layout-cell {border:none !important; padding:0 !important; }
+.ie6 .art-post .art-layout-cell {border:none !important; padding:0 !important; }
+
+.art-slidecontainershutterstock_17235442 {
+    position: relative;
+        width: 300px;
+    height: 267px;
+        }
+
+.default-responsive .art-header .art-slidecontainershutterstock_17235442,
+.responsive .art-header .art-slidecontainershutterstock_17235442
+{
+  position: absolute !important;
+}
+
+.responsive .art-pageslider .art-slidecontainershutterstock_17235442 {
+  position: absolute !important;
+}
+
+.art-slidecontainershutterstock_17235442 .art-slide-item
+{
+
+    -webkit-transform: rotate(0);
+    -moz-transform: rotate(0);
+    transform: rotate(0);
+}
+
+
+
+.art-slidecontainershutterstock_17235442 .art-slide-item {
+    -webkit-transition: 600ms ease-in-out opacity;
+    -moz-transition: 600ms ease-in-out opacity;
+    -ms-transition: 600ms ease-in-out opacity;
+    -o-transition: 600ms ease-in-out opacity;
+    transition: 600ms ease-in-out opacity;
+    position: absolute !important;
+    display: none;
+	left: 0;
+	top: 0;
+	opacity: 0;
+    width:  100%;
+    height: 100%;
+}
+
+.art-slidecontainershutterstock_17235442 .active, .art-slidecontainershutterstock_17235442 .next, .art-slidecontainershutterstock_17235442 .prev {
+    display: block;
+}
+
+.art-slidecontainershutterstock_17235442 .active {
+    opacity: 1;
+}
+
+.art-slidecontainershutterstock_17235442 .next, .art-slidecontainershutterstock_17235442 .prev {
+    width: 100%;
+}
+
+.art-slidecontainershutterstock_17235442 .next.forward, .art-slidecontainershutterstock_17235442 .prev.back {
+    opacity: 1;
+}
+
+.art-slidecontainershutterstock_17235442 .active.forward {
+    opacity: 0;
+}
+
+.art-slidecontainershutterstock_17235442 .active.back {
+    opacity: 0;
+}
+
+
+.art-slideshutterstock_172354420 {
+    background-image:  url('images/slideshutterstock_172354420.png');
+        /* background-size:  auto auto; */
+        background-position:  center center;
+    background-repeat: no-repeat;
+}
+
+/* special setup for header/pageslider */
+.responsive .art-header .art-slideshutterstock_172354420 {
+    background-image:  url('images/slideshutterstock_172354420.png');
+    background-size: auto auto;
+    background-position:  center center;
+    background-repeat: no-repeat;
+}
+
+.responsive .art-pageslider .art-slideshutterstock_172354420 {
+    background-image:  url('images/slideshutterstock_172354420.png');
+    background-size: auto auto;
+    background-position:  center center;
+    background-repeat: no-repeat;
+}
+
+.default-responsive .art-header .art-slideshutterstock_172354420 {
+    background-image: url('images/slideshutterstock_172354420.png');
+    background-size: auto auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.default-responsive .art-pageslider .art-slideshutterstock_172354420 {
+    background-image: url('images/slideshutterstock_172354420.png');
+    background-size: auto auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+}.art-slideshutterstock_172354421 {
+    background-image:  url('images/slideshutterstock_172354421.png');
+        /* background-size:  auto auto; */
+        background-position:  center center;
+    background-repeat: no-repeat;
+}
+
+/* special setup for header/pageslider */
+.responsive .art-header .art-slideshutterstock_172354421 {
+    background-image:  url('images/slideshutterstock_172354421.png');
+    background-size: auto auto;
+    background-position:  center center;
+    background-repeat: no-repeat;
+}
+
+.responsive .art-pageslider .art-slideshutterstock_172354421 {
+    background-image:  url('images/slideshutterstock_172354421.png');
+    background-size: auto auto;
+    background-position:  center center;
+    background-repeat: no-repeat;
+}
+
+.default-responsive .art-header .art-slideshutterstock_172354421 {
+    background-image: url('images/slideshutterstock_172354421.png');
+    background-size: auto auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.default-responsive .art-pageslider .art-slideshutterstock_172354421 {
+    background-image: url('images/slideshutterstock_172354421.png');
+    background-size: auto auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.art-slidenavigatorshutterstock_17235442 {
+  display: inline-block;
+  position: absolute;
+  direction: ltr !important;
+  top: 243px;
+  left: 85.33%;
+  z-index: 101;
+  line-height: 0 !important;
+  -webkit-background-origin: border !important;
+  -moz-background-origin: border !important;
+  background-origin: border-box !important;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  text-align: center;
+    white-space: nowrap;
+    }
+.art-slidenavigatorshutterstock_17235442
+{
+background: #9A9A9A;background: -webkit-linear-gradient(top, rgba(194, 194, 194, 0.6) 0, rgba(128, 128, 128, 0.6) 84%, rgba(115, 115, 115, 0.6) 100%) no-repeat;background: -moz-linear-gradient(top, rgba(194, 194, 194, 0.6) 0, rgba(128, 128, 128, 0.6) 84%, rgba(115, 115, 115, 0.6) 100%) no-repeat;background: -o-linear-gradient(top, rgba(194, 194, 194, 0.6) 0, rgba(128, 128, 128, 0.6) 84%, rgba(115, 115, 115, 0.6) 100%) no-repeat;background: -ms-linear-gradient(top, rgba(194, 194, 194, 0.6) 0, rgba(128, 128, 128, 0.6) 84%, rgba(115, 115, 115, 0.6) 100%) no-repeat;-svg-background: linear-gradient(top, rgba(194, 194, 194, 0.6) 0, rgba(128, 128, 128, 0.6) 84%, rgba(115, 115, 115, 0.6) 100%) no-repeat;background: linear-gradient(to bottom, rgba(194, 194, 194, 0.6) 0, rgba(128, 128, 128, 0.6) 84%, rgba(115, 115, 115, 0.6) 100%) no-repeat;
+-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;
+
+
+padding:7px;
+
+
+
+
+
+}
+.art-slidenavigatorshutterstock_17235442 > a
+{
+background: #575757;
+-webkit-border-radius:50%;-moz-border-radius:50%;border-radius:50%;
+
+
+
+margin:0 10px 0 0;
+
+width: 10px;
+
+height: 10px;
+}
+.art-slidenavigatorshutterstock_17235442 > a.active
+{
+background: #FDDA7B;
+-webkit-border-radius:50%;-moz-border-radius:50%;border-radius:50%;
+
+
+
+margin:0 10px 0 0;
+
+width: 10px;
+
+height: 10px;
+}
+.art-slidenavigatorshutterstock_17235442 > a:hover
+{
+background: #AB7E03;
+-webkit-border-radius:50%;-moz-border-radius:50%;border-radius:50%;
+
+
+
+margin:0 10px 0 0;
+
+width: 10px;
+
+height: 10px;
+}
+
+</style></head>
+<body>
+<div id="art-main">
+    <div class="art-sheet clearfix">
+<header class="art-header">
+
+    <div class="art-shapes">
+        
+            </div>
+<div class="art-slider art-slidecontainerheader" data-width="800" data-height="200">
+    <div class="art-slider-inner">
+<div class="art-slide-item art-slideheader0">
+
+
+</div>
+<div class="art-slide-item art-slideheader1">
+
+
+</div>
+
+    </div>
+</div>
+<div class="art-slidenavigator art-slidenavigatorheader" data-left="1" data-top="1">
+<a href="#" class="art-slidenavigatoritem"></a><a href="#" class="art-slidenavigatoritem"></a>
+</div>
+
+
+<h2 class="art-slogan">Artificial Intelligence</h2>
+
+
+
+
+
+                
+                    
+</header>
+<nav class="art-nav">
+    <ul class="art-hmenu"><li><a href="artificial-intelligence.html" class="">ARTIFICIAL INTELLIGENCE</a></li><li><a href="characteristics-of-intelligence.html" class="active">Characteristics of intelligence</a><ul class="active"><li><a href="characteristics-of-intelligence/customers-say.html">Customers Say</a></li></ul></li><li><a href="car-reviews.html">The importance of artificial intelligence</a></li><li><a href="problem-of-artificial-intellegence.html">problem of artificial intellegence</a></li></ul> 
+    </nav>
+<div class="art-layout-wrapper">
+                <div class="art-content-layout">
+                    <div class="art-content-layout-row">
+                        <div class="art-layout-cell art-content"><article class="art-post art-article">
+                                <h2 class="art-postheader">Find A Car</h2>
+                                                
+                <div class="art-postcontent art-postcontent-0 clearfix"><div class="art-content-layout">
+    <div class="art-content-layout-row">
+    <div class="art-layout-cell layout-item-0" style="width: 42%" >
+<div id="shutterstock_17235442" style="position: relative; display: inline-block; z-index: 0; margin: 0px;  border-width: 0px;  " class="art-collage">
+<div class="art-slider art-slidecontainershutterstock_17235442" data-width="300" data-height="267">
+    <div class="art-slider-inner">
+<div class="art-slide-item art-slideshutterstock_172354420" >
+
+
+</div>
+<div class="art-slide-item art-slideshutterstock_172354421" >
+
+
+</div>
+
+    </div>
+</div>
+<div class="art-slidenavigator art-slidenavigatorshutterstock_17235442" data-left="1" data-top="1">
+<a href="#" class="art-slidenavigatoritem"></a><a href="#" class="art-slidenavigatoritem"></a>
+</div>
+
+
+
+    </div>
+
+    </div><div class="art-layout-cell layout-item-0" style="width: 58%" >
+        <p class="MsoNormal"><b><u><span style="font-size: 14pt; line-height: 107%; color: red;">Characteristics of Artificial Intelligence &nbsp;</span></u></b></p>
+         
+        <p class="MsoNormal">Artificial intelligence has many characteristics that made
+         it an effective investment in many areas:[1] The application of artificial
+         intelligence to devices and machines enables them to plan and analyze problems
+         using logic. Recognizes sounds, speech, and the ability to move objects. AI
+         devices can understand and analyze inputs well to deliver outputs that meet
+         user needs with high efficiency. It enables continuous learning, where the
+         learning process is automatic and subjective without being subject to
+         monitoring and supervision. It is able to process the vast amount of
+         information it is exposed to. It can notice similar patterns in data and
+         analyze it more effectively than human brains. He can find solutions to
+         unfamiliar problems using his cognitive abilities.</p><p><span style="font-weight: bold;"></span></p><p><br></p>
+    </div>
+    </div>
+</div>
+<div class="art-content-layout">
+    <div class="art-content-layout-row">
+    <div class="art-layout-cell layout-item-0" style="width: 33%" >
+        <p class="MsoNormal"><b><u><span style="font-size: 14pt; line-height: 107%; color: red;">Information about artificial intelligence Artificial intelligence</span></u></b></p>
+         
+        <p class="MsoNormal">is simulating the human brain in performing some of its
+         complex functions by acquiring information from the environment and linking it
+         to reach specific conclusions related to a particular matter, as the simulation
+         process is done using computers and various machines, as it is considered a
+         branch of computer science that is concerned with creating machines and devices</p><ul><li style="list-style: none">
+         
+        </li><li>Ornare</li><li style="list-style: none">
+         
+        </li><li>Elit</li>
+        </ul>
+    </div><div class="art-layout-cell layout-item-0" style="width: 34%" >
+        <p class="MsoNormal"><b><u><span style="font-size: 14pt; line-height: 107%; color: red;">The benefits of artificial intelligence in the field of agriculture
+         Artificial intelligence</span></u></b></p>
+         
+        <p class="MsoNormal">&nbsp;is used to monitor
+         climatic conditions to know the most appropriate times for cultivation, and the
+         condition of the soil is also known to determine the species that can be
+         cultivated and to research ways to improve the quality of crops and increase
+         their productivity.</p><h3><span style="color: rgb(210, 210, 210); font-size: 12px; font-weight: normal; line-height: 24px;"><br></span></h3><ul><li style="list-style: none">
+         
+        </li><li>Over 30 MPG City</li><li style="list-style: none">
+         
+        </li><li>Over 40 MPG City</li>
+        </ul>
+    </div><div class="art-layout-cell layout-item-0" style="width: 33%" >
+        <p class="MsoNormal"><b><u><span style="font-size: 14pt; line-height: 107%; color: red;">The field of medicine</span></u></b></p>
+         
+        <p class="MsoNormal">&nbsp;has helped artificial
+         intelligence achieve greater accuracy, especially in diagnosing diseases and
+         determining appropriate treatments based on the type of disease with high
+         accuracy.</p><h3></h3><ul><li style="list-style: none">
+         
+        </li><li>Over 30 MPG Hwy</li><li style="list-style: none">
+         
+        </li><li>Over 40 MPG Hwy</li>
+        </ul>
+    </div>
+    </div>
+</div>
+<div class="art-content-layout">
+    <div class="art-content-layout-row">
+    <div class="art-layout-cell layout-item-0" style="width: 33%" >
+        <p class="MsoNormal"><u><span style="font-size: 14pt; line-height: 107%; color: red;">The field of recruitment processes</span></u></p>
+         
+        <p class="MsoNormal"><b>&nbsp;makes it easier
+         for artificial intelligence to screen candidates applying for a particular job
+         and read their resumes to determine competencies.</b></p><h3><br></h3><div style="margin-left: 2em">
+        </div>
+    </div><div class="art-layout-cell layout-item-0" style="width: 34%" >
+        <p class="MsoNormal"><b><u><span style="font-size: 14pt; line-height: 107%; color: red;">In the field of customer service</span></u></b></p>
+         
+        <p class="MsoNormal">&nbsp;artificial
+         intelligence has been used a lot in the field of customer service and
+         communication with consumers, especially in the matter of mobile phones, as it
+         provided support to human energies in simply listening an</p>
+         
+        <p class="MsoNormal">d responding to customers.</p><h3><br></h3>
+    </div><div class="art-layout-cell layout-item-0" style="width: 33%" >
+        <h3><br></h3>
+    </div>
+    </div>
+</div>
+</div>
+
+
+</article></div>
+                    </div>
+                </div>
+            </div><footer class="art-footer">
+<p><br></p>
+</footer>
+
+    </div>
+</div>
+
+
+</body></html>
